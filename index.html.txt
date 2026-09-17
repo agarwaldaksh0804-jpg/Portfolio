@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daksh Agarwal | Professional Model Portfolio</title>
+    <style>
+        /* High-Fashion Minimalist Reset & Typography */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #ffffff;
+            color: #111111;
+            line-height: 1.6;
+            letter-spacing: 0.05em;
+        }
+
+        header {
+            padding: 60px 40px 30px 40px;
+            text-align: center;
+            border-bottom: 1px solid #eaeaea;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 300;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            color: #666666;
+            letter-spacing: 0.2em;
+            margin-bottom: 15px;
+        }
+
+        .info-block {
+            font-size: 0.85rem;
+            color: #444444;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            line-height: 1.8;
+        }
+
+        /* Layout Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        section {
+            margin-bottom: 80px;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #111111;
+            padding-bottom: 5px;
+            display: inline-block;
+        }
+
+        /* Stats Grid styling */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            background-color: #f9f9f9;
+            padding: 30px;
+            border: 1px solid #eeeeee;
+        }
+
+        .stat-item {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .stat-label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            color: #777777;
+            margin-bottom: 2px;
+        }
+
+        .stat-value {
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+
+        /* Responsive Portfolio Image Gallery */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        @media (min-width: 768px) {
+            .gallery-grid {
+                grid-template-columns: repeat(4, 1fr); /* Clean 4-column layout for 8 images */
+            }
+        }
+
+        .gallery-item {
+            position: relative;
+            background-color: #f5f5f5;
+            aspect-ratio: 2 / 3; /* Standard portrait modeling ratio */
+            overflow: hidden;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.03);
+        }
+
+        .photo-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: linear-gradient(transparent, rgba(0,0,0,0.7));
+            color: #ffffff;
+            padding: 15px;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .gallery-item:hover .photo-caption {
+            opacity: 1;
+        }
+
+        /* Minimalist Contact Form */
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #cccccc;
+            font-family: inherit;
+            font-size: 1rem;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus, .form-group textarea:focus {
+            border-color: #111111;
+        }
+
+        .submit-btn {
+            background-color: #111111;
+            color: #ffffff;
+            border: none;
+            padding: 15px 40px;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s;
+        }
+
+        .submit-btn:hover {
+            background-color: #333333;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            font-size: 0.8rem;
+            color: #888888;
+            border-top: 1px solid #eaeaea;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Daksh Agarwal</h1>
+        <div class="subtitle">Male Model Portfolio</div>
+        <div class="info-block">
+            Batch 2023<br>
+            MRIMS Hyd<br>
+            Contact: +91 9849340537
+        </div>
+    </header>
+
+    <div class="container">
+
+        <!-- 1. Stats Sheet Section -->
+        <section id="stats">
+            <h2>Model Measurements</h2>
+            <div class="stats-grid">
+                <div class="stat-item"><span class="stat-label">Height</span><span class="stat-value">5'9" (175 cm)</span></div>
+                <div class="stat-item"><span class="stat-label">Chest</span><span class="stat-value">40"</span></div>
+                <div class="stat-item"><span class="stat-label">Waist</span><span class="stat-value">35"</span></div>
+                <div class="stat-item"><span class="stat-label">Hips</span><span class="stat-value">38"</span></div>
+                <div class="stat-item"><span class="stat-label">Collar</span><span class="stat-value">16"</span></div>
+                <div class="stat-item"><span class="stat-label">Arm Length</span><span class="stat-value">14"</span></div>
+                <div class="stat-item"><span class="stat-label">Shoes</span><span class="stat-value">US 10 (10.5")</span></div>
+                <div class="stat-item"><span class="stat-label">Hair / Eyes</span><span class="stat-value">[Hair] / [Eyes]</span></div>
+            </div>
+        </section>
+
+        <!-- 2. Portfolio Gallery Section -->
+        <section id="gallery">
+            <h2>Portfolio Gallery</h2>
+            <div class="gallery-grid">
+                
+                <!-- Photo 1 -->
+                <div class="gallery-item">
+                    <img src="photo1.jpg" alt="Portfolio Image 01">
+                    <div class="photo-caption">Image 01</div>
+                </div>
+
+                <!-- Photo 2 -->
+                <div class="gallery-item">
+                    <img src="photo2.jpg" alt="Portfolio Image 02">
+                    <div class="photo-caption">Image 02</div>
+                </div>
+
+                <!-- Photo 3 -->
+                <div class="gallery-item">
+                    <img src="photo3.jpg" alt="Portfolio Image 03">
+                    <div class="photo-caption">Image 03</div>
+                </div>
+
+                <!-- Photo 4 -->
+                <div class="gallery-item">
+                    <img src="photo4.jpg" alt="Portfolio Image 04">
+                    <div class="photo-caption">Image 04</div>
+                </div>
+
+                <!-- Photo 5 -->
+                <div class="gallery-item">
+                    <img src="photo5.jpg" alt="Portfolio Image 05">
+                    <div class="photo-caption">Image 05</div>
+                </div>
+
+                <!-- Photo 6 -->
+                <div class="gallery-item">
+                    <img src="photo6.jpg" alt="Portfolio Image 06">
+                    <div class="photo-caption">Image 06</div>
+                </div>
+
+                <!-- Photo 7 -->
+                <div class="gallery-item">
+                    <img src="photo7.jpg" alt="Portfolio Image 07">
+                    <div class="photo-caption">Image 07</div>
+                </div>
+
+                <!-- Photo 8 -->
+                <div class="gallery-item">
+                    <img src="photo8.jpg" alt="Portfolio Image 08">
+                    <div class="photo-caption">Image 08</div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 3. Agency Booking Form -->
+        <section id="booking">
+            <h2>Casting & Bookings</h2>
+            <form class="contact-form" action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Company / Agency Name</label>
+                    <input type="text" id="name" required placeholder="e.g., NIFT, Lakmé, Next Models">
+                </div>
+                <div class="form-group">
+                    <label for="email">Contact Email</label>
+                    <input type="email" id="email" required placeholder="yourname@agency.com">
+                </div>
+                <div class="form-group">
+                    <label for="message">Project / Direct Casting Details</label>
+                    <textarea id="message" rows="5" required placeholder="Provide shoot dates, location, rates, and usage rights details..."></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Booking Inquiry</button>
+            </form>
+        </section>
+
+    </div>
+
+    <footer>
+    
